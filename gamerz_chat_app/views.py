@@ -45,7 +45,6 @@ def login(request):
 
 
 def game_all(request):
-    # check to see if the user loggedin or registered by checking their session
     if "user_id" not in request.session:
         return redirect('/')
     else:
@@ -70,7 +69,6 @@ def create_game(request):
             description=request.POST['description'],
             creator=user
         )
-        # bonus: the book creator automatically favorites the book
         user.favorited_games.add(game)
 
         return redirect(f'/games/{game.id}')
