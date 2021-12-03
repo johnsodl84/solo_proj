@@ -27,7 +27,7 @@ SECRET_KEY = '+(=%yw^=+5drpgti33d=s!_!uywcwh(v*@lxe8=dxn!k06-e7x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Soloprojenvaws-env.eba-sm7jsmam.us-east-2.elasticbeanstalk.com']
 
 
 # Application definition
